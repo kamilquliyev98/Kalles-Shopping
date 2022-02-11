@@ -27,6 +27,11 @@ a {
 header .header-top {
     padding: 10px 15px;
     font-size: 12px;
+    background-color: #F6F6F8;
+}
+
+.header-top .ht-middle p {
+    margin: 0;
 }
 
 .header-top .ht-middle a:hover {
@@ -34,16 +39,51 @@ header .header-top {
     text-decoration: underline;
 }
 
+.header-top .ht-right select {
+    outline: none;
+}
+
 header .header-bottom .hb-left img {
     width: 100px;
 }
 
 header .header-bottom {
-    padding: 7px 15px;
+    padding: 15px;
 }
 
 header .header-bottom .hb-middle nav ul {
     list-style: none;
+}
+
+header .header-bottom .hb-middle nav ul li {
+    position: relative;
+}
+
+header .header-bottom .hb-middle nav ul li .menu-label {
+    position: absolute;
+    color: #fff;
+    font-size: 9px;
+    padding: 1px 7px;
+    border-radius: 50px;
+    top: 40%;
+    line-height: 16px;
+    transform: translateY(-50%);
+    right: -10px;
+    margin-top: -14px;
+    transition: opacity .3s ease-in-out;
+    opacity: 1;
+}
+
+header .header-bottom .hb-middle nav ul li .menu-label-bgcolor-blue {
+    background-color: #01BAD4;
+}
+
+header .header-bottom .hb-middle nav ul li .menu-label-bgcolor-orange{
+    background-color: #FFA800;
+}
+
+header .header-bottom .hb-middle nav ul li .menu-label-bgcolor-red {
+    background-color: #FF0000;
 }
 
 header .header-bottom .hb-middle nav ul li a,
@@ -60,10 +100,11 @@ header .header-bottom .hb-middle nav ul li a:hover,
     color: #56cfe1;
 }
 
-#slider{
+#slider {
     width: 100%;
+    height: 80vh;
     background-image: url(../images/background/slideshow_image.jpg);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -81,7 +122,11 @@ header .header-bottom .hb-middle nav ul li a:hover,
 }
 
 .slider .slider-content {
-    padding: 19rem 4rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .slider .slider-title {
