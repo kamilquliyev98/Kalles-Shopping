@@ -41,6 +41,8 @@ header .header-top {
 
 .header-top .ht-right select {
     outline: none;
+    border: none;
+    background: transparent;
 }
 
 header .header-bottom .hb-left img {
@@ -78,7 +80,7 @@ header .header-bottom .hb-middle nav ul li .menu-label-bgcolor-blue {
     background-color: #01BAD4;
 }
 
-header .header-bottom .hb-middle nav ul li .menu-label-bgcolor-orange{
+header .header-bottom .hb-middle nav ul li .menu-label-bgcolor-orange {
     background-color: #FFA800;
 }
 
@@ -154,4 +156,199 @@ header .header-bottom .hb-middle nav ul li a:hover,
     text-align: center;
     font-weight: 600;
     display: inline-block;
+}
+
+#banner {
+    margin: 0 1rem;
+}
+
+#banner .banner .single-banner {
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.banner .single-banner .banner-name {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.banner .single-banner .b-text-bottomleft {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 1;
+}
+
+.banner .single-banner .b-text-bottomleft p {
+    color: #222;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.banner .single-banner .b-text-bottomleft h4 {
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 35px;
+    color: #222;
+}
+
+.banner .single-banner .b-text-bottomleft span {
+    color: #878787;
+    font-size: 14px;
+}
+
+.banner .single-banner .b-text-cc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner .single-banner .b-text-cc p {
+    font-size: 18px;
+    color: #222;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.banner .single-banner .b-text-cc h4 {
+    margin-bottom: 5px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #222;
+}
+
+.banner .single-banner .b-text-cc a {
+    display: inline-block;
+    line-height: 36px;
+    border: 2px solid;
+    box-shadow: 0;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    padding: 0 20px;
+    min-width: 150px;
+    border-radius: 30px;
+    transition: all .3s;
+}
+
+.banner .single-banner .b-text-cc a:hover {
+    border-color: #56CFE1;
+    background-color: #56CFE1;
+    color: #fff;
+}
+
+.banner .single-banner .banner-name a {
+    font-size: 14px;
+    background: #fff;
+    color: #222;
+    padding: 0 20px;
+    box-shadow: 1px 1px 0 0 rgb(0 0 0 / 10%);
+    min-width: 150px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    display: inline-block;
+    transition: opacity .3s;
+}
+
+.banner .single-banner .banner-name a:hover {
+    opacity: .8;
+}
+
+.banner .single-banner img {
+    transition: transform .9s;
+    z-index: -1;
+}
+
+.banner .scale-effect:hover img {
+    transform: scale(1.1);
+}
+
+.banner .single-banner:hover .b-text-bc .product-info {
+    opacity: 1;
+}
+
+.banner .single-banner .b-text-bc {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .single-banner .b-text-bc .product-info {
+    padding: 10px 10px 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, 0) 100%);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.banner .single-banner .b-text-bc .product-info:hover{
+    opacity: 1;
+}
+
+.banner .single-banner .b-text-bc .product-info h3 a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+}
+
+.banner .single-banner .b-text-bc .product-info .product-price {
+    color: rgba(255, 255, 255, .7);
+}
+
+.banner .single-banner .b-text-bc .product-info .switch-color {
+    margin: 0 -5px;
+}
+
+.single-banner .b-text-bc .product-info .switch-color .product-color {
+    margin: 1px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.single-banner .b-text-bc .product-info .switch-color .c-000 {
+    background-color: #000;
+}
+
+.single-banner .b-text-bc .product-info .switch-color .c-ffc0cb {
+    background-color: #FFC0CB;
+}
+
+.single-banner .b-text-bc .product-info .rating {
+    font-size: 12px;
+}
+
+.single-banner .b-text-bc .product-info .rating i {
+    color: #FDBC00;
+}
+
+.single-banner .b-text-bc .product-info .rating span {
+    color: #fff;
+}
+
+.single-banner .b-text-bc .product-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 12px;
+    top: 12px;
 }
