@@ -18,9 +18,6 @@
     <!-- IcoFont -->
     <link rel="stylesheet" href="fonts/icofont/icofont.min.css">
 
-    <!-- Flag Icons -->
-    <link rel="stylesheet" href="css/flag-icons-main/css/flag-icons.min.css">
-
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +25,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -45,15 +42,15 @@
                 <div class="container-fluid">
                     <div class="row align-items-center">
 
-                        <div class="col-lg-3 text-muted">
-                            <div class="ht-left">
-                                <i class="fa-solid fa-phone"></i><a class="text-muted ms-2" href="#">+01 23456789</a>
-                                <i class="fa-solid fa-envelope ms-3"></i><a class="text-muted ms-2"
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                            <div class="ht-left color-grey">
+                                <i class="fa-solid fa-phone"></i><a class="color-grey ms-2" href="#">+01 23456789</a>
+                                <i class="fa-solid fa-envelope ms-3"></i><a class="color-grey ms-2"
                                     href="#">Kalles@domain.com</a>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 text-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="ht-middle">
                                 <p>
                                     <span class="text-muted">Summer sale discount off</span> <span class="color-red">50%
@@ -62,7 +59,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3 text-end">
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                             <div class="ht-right">
                                 <select name="exchange" id="exchange">
                                     <option value="usd">USD</option>
@@ -141,18 +138,20 @@
                         </div>
 
                         <div class="col-lg-2">
-                            <div class="hb-right text-end">
-                                <a href="#">
+                            <div class="hb-right">
+                                <a href="#" title="Search">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </a>
                                 <a href="#">
                                     <i class="fa-regular fa-user"></i>
                                 </a>
-                                <a href="#">
+                                <a href="#" title="View your Wishlist">
                                     <i class="fa-regular fa-heart"></i>
+                                    <span class="count">0</span>
                                 </a>
-                                <a href="#">
+                                <a href="#" title="View your shopping cart">
                                     <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="count">1</span>
                                 </a>
                             </div>
                         </div>
@@ -164,6 +163,8 @@
 
     </header>
 
+
+
     <section id="slider">
         <div class="slider-overlay"></div>
         <div class="slider">
@@ -173,105 +174,131 @@
                 <a class="" href="#" title="Shop Now">Shop Now</a>
             </div>
         </div>
-    </section>
+    </section> <!-- /slider -->
 
     <section id="banner">
-        <div class="banner">
-            <div class="container-fluid">
-                <div class="row align-items-center">
+        <div class="container-fluid">
+            <div class="row">
 
-                    <div class="col-lg-3">
-                        <div class="single-banner scale-effect">
-                            <div class="banner-name">
-                                <a href="#">Footwear</a>
-                            </div>
-                            <img src="images/banner/b01.jpeg" class="img-fluid" alt="banner">
+                <div class="col-lg-3 mt-4">
+                    <div class="single-banner hvr-scale">
+                        <img src="images/banner/b01.jpeg" alt="banner-01" class="img-fluid">
+                        <div class="banner-content">
+                            <a href="#">Footwear</a>
                         </div>
                     </div>
-
-                    <div class="col-lg-3">
-                        <div class="single-banner scale-effect">
-                            <div class="banner-name">
-                                <a href="#">Bags</a>
-                            </div>
-                            <img src="images/banner/b02.jpeg" class="img-fluid" alt="banner">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="single-banner scale-effect">
-                            <div class="banner-name">
-                                <a href="#">Watches</a>
-                            </div>
-                            <img src="images/banner/b03.jpg" class="img-fluid" alt="banner">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="single-banner scale-effect">
-                            <div class="banner-name">
-                                <a href="#">Tops</a>
-                            </div>
-                            <img src="images/banner/b04.jpg" class="img-fluid" alt="banner">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="single-banner scale-effect">
-                            <div class="b-text-bottomleft">
-                                <p class="text-uppercase">View collections</p>
-                                <h4 class="text-uppercase">Lookbook</h4>
-                                <span class="text-lowercase">Your world of fashion in numbers</span>
-                            </div>
-                            <img src="images/banner/b05.jpeg" class="img-fluid" alt="banner">
-                        </div>
-                    </div>
-
-                    <!-- <div class="col-lg-4">
-                        <div class="single-banner">
-                            <a href="#">
-                                <img src="images/banner/b06.jpg" class="img-fluid" alt="banner">
-                            </a>
-                            <div class="b-text-bc text-center">
-                                <div class="product-icons">
-                                    <i class="fa-regular fa-heart"></i>
-                                    <i class="fa-solid fa-arrows-rotate"></i>
-                                </div>
-                                <div class="product-info">
-                                    <h3>
-                                        <a href="#">La Bohème Rose Gold</a>
-                                    </h3>
-                                    <span class="product-price">$50,00</span>
-                                    <div class="switch-color">
-                                        <span class="product-color c-000"></span>
-                                        <span class="product-color c-ffc0cb"></span>
-                                    </div>
-                                    <div class="rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <span>(12)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class="col-lg-4">
-                        <div class="single-banner scale-effect">
-                            <div class="b-text-cc">
-                                <p class="text-uppercase">Summer sale</p>
-                                <h4 class="text-uppercase">Up to 70%</h4>
-                                <a href="#">Shop now</a>
-                            </div>
-                            <img src="images/banner/b07.jpeg" class="img-fluid" alt="banner">
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="col-lg-3 mt-4">
+                    <div class="single-banner hvr-scale">
+                        <img src="images/banner/b02.jpeg" alt="banner-02" class="img-fluid">
+                        <div class="banner-content">
+                            <a href="#">Bags</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-4">
+                    <div class="single-banner hvr-scale">
+                        <img src="images/banner/b03.jpg" alt="banner-03" class="img-fluid">
+                        <div class="banner-content">
+                            <a href="#">Watches</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 mt-4">
+                    <div class="single-banner hvr-scale">
+                        <img src="images/banner/b04.jpg" alt="banner-04" class="img-fluid">
+                        <div class="banner-content">
+                            <a href="#">Tops</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="single-banner hvr-scale">
+                        <img src="images/banner/b05.jpeg" alt="banner-05" class="img-fluid">
+                        <div class="b-text-bottomleft">
+                            <p class="text-uppercase">View collections</p>
+                            <h4 class="text-uppercase">Lookbook</h4>
+                            <span class="text-lowercase color-grey">Your world of fashion in numbers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="single-banner hvr-overlay">
+                        <a href="#">
+                            <img src="images/banner/b06.jpg" alt="banner-06" class="img-fluid">
+                        </a>
+                        <div class="hvr-icons">
+                            <a href="#" class="mb-1">
+                                <i class="fa-regular fa-heart heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-arrows-rotate spin"></i>
+                            </a>
+                        </div>
+                        <div class="hvr-buttons">
+                            <div class="quick-buttons">
+                                <div class="quick-view">
+                                    <a href="#">
+                                        <span>Quick View</span>
+                                        <i class="fa-regular fa-eye"></i>
+                                    </a>
+                                </div>
+                                <div class="quick-shop">
+                                    <a href="#">
+                                        <span>Quick Shop</span>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>
+                                <a href="#">La Bohème Rose Gold</a>
+                            </h3>
+                            <span class="product-price">$50,00</span>
+                            <div class="switch-color">
+                                <span class="product-color c-000"></span>
+                                <span class="product-color c-ffc0cb"></span>
+                            </div>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="single-banner hvr-scale">
+                        <img src="images/banner/b07.jpeg" alt="banner-07" class="img-fluid">
+                        <div class="b-text-cc">
+                            <p class="text-uppercase">Summer sale</p>
+                            <h4 class="text-uppercase">Up to 70%</h4>
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
+    </section> <!-- /banner -->
+
+    <section id="trending">
+        <div class="container">
+            <div class="section-title">
+                <h3>Trending</h3>
+                <p class="color-grey">Top view in this week</p>
+            </div>
+            
         </div>
     </section>
 
